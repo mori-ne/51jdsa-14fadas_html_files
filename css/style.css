@@ -4,19 +4,16 @@
 /*---------------------------- リンクホバー ---------------------- */
 a {
   color: #333333;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-
 a:hover {
   opacity: 0.8;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 /*---------------------------- レイアウトクラス ------------------------- */
 body {
-  font-family: 'Source Serif Pro', "Hiragino Sans W3", serif;
+  font-family: "Source Serif Pro", "Hiragino Sans W3", serif;
   font-size: 16px;
   background-image: url(../img/bg_paper.jpg);
   background-position: center top;
@@ -39,7 +36,6 @@ body {
 .header .inner a {
   display: block;
 }
-
 .header .inner a img {
   width: 1000px;
   height: 160px;
@@ -48,33 +44,24 @@ body {
 .contents {
   margin: 0 0 20px 0;
 }
-
 .contents .inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
-
 .contents .inner .sidebar {
   width: 300px;
   background: #0a4682;
 }
-
 .contents .inner .sidebar .bunnerarea {
   padding: 20px;
 }
-
 .contents .inner .sidebar .global_nav {
   padding: 0 10px 10px 10px;
 }
-
 .contents .inner .sidebar .global_nav ul {
   border-top: 2px solid #fff;
   padding: 10px 0 0 0;
 }
-
 .contents .inner .sidebar .global_nav ul li {
   width: 280px;
   height: 50px;
@@ -84,7 +71,6 @@ body {
   /*--------------------------------- メニューアイコンクラス----------------------------*/
   /*--------------------------------- メニューアイコンクラスここまで----------------------------*/
 }
-
 .contents .inner .sidebar .global_nav ul li a {
   font-weight: 700;
   font-size: 18px;
@@ -94,21 +80,17 @@ body {
   color: #fff;
   text-indent: 60px;
   line-height: 2.7em;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   background-image: url(../img/menu_static.png);
   position: relative;
 }
-
 .contents .inner .sidebar .global_nav ul li a:hover {
   color: #333;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
   opacity: 1;
   border-radius: 4px;
   background-image: url(../img/menu_hover.png);
 }
-
 .contents .inner .sidebar .global_nav ul li .top:before {
   content: "";
   position: absolute;
@@ -121,12 +103,10 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
 }
-
 .contents .inner .sidebar .global_nav ul li .top:hover::before {
   background-image: -webkit-image-set(url(../img/menu_ico_01_hover.png) 1x, url(../img/menu_ico_01_hover@2x.png) 2x);
   background-image: image-set(url(../img/menu_ico_01_hover.png) 1x, url(../img/menu_ico_01_hover@2x.png) 2x);
 }
-
 .contents .inner .sidebar .global_nav ul li .greeting:before {
   content: "";
   position: absolute;
@@ -139,12 +119,10 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
 }
-
 .contents .inner .sidebar .global_nav ul li .greeting:hover::before {
   background-image: -webkit-image-set(url(../img/menu_ico_02_hover.png) 1x, url(../img/menu_ico_02_hover@2x.png) 2x);
   background-image: image-set(url(../img/menu_ico_02_hover.png) 1x, url(../img/menu_ico_02_hover@2x.png) 2x);
 }
-
 .contents .inner .sidebar .global_nav ul li .about:before {
   content: "";
   position: absolute;
@@ -157,12 +135,10 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
 }
-
 .contents .inner .sidebar .global_nav ul li .about:hover::before {
   background-image: -webkit-image-set(url(../img/menu_ico_03_hover.png) 1x, url(../img/menu_ico_03_hover@2x.png) 2x);
   background-image: image-set(url(../img/menu_ico_03_hover.png) 1x, url(../img/menu_ico_03_hover@2x.png) 2x);
 }
-
 .contents .inner .sidebar .global_nav ul li .program:before {
   content: "";
   position: absolute;
@@ -175,12 +151,10 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
 }
-
 .contents .inner .sidebar .global_nav ul li .program:hover::before {
   background-image: -webkit-image-set(url(../img/menu_ico_04_hover.png) 1x, url(../img/menu_ico_04_hover@2x.png) 2x);
   background-image: image-set(url(../img/menu_ico_04_hover.png) 1x, url(../img/menu_ico_04_hover@2x.png) 2x);
 }
-
 .contents .inner .sidebar .global_nav ul li .abstracts:before {
   content: "";
   position: absolute;
@@ -193,12 +167,10 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
 }
-
 .contents .inner .sidebar .global_nav ul li .abstracts:hover::before {
   background-image: -webkit-image-set(url(../img/menu_ico_05_hover.png) 1x, url(../img/menu_ico_05_hover@2x.png) 2x);
   background-image: image-set(url(../img/menu_ico_05_hover.png) 1x, url(../img/menu_ico_05_hover@2x.png) 2x);
 }
-
 .contents .inner .sidebar .global_nav ul li .register:before {
   content: "";
   position: absolute;
@@ -211,12 +183,10 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
 }
-
 .contents .inner .sidebar .global_nav ul li .register:hover::before {
   background-image: -webkit-image-set(url(../img/menu_ico_06_hover.png) 1x, url(../img/menu_ico_06_hover@2x.png) 2x);
   background-image: image-set(url(../img/menu_ico_06_hover.png) 1x, url(../img/menu_ico_06_hover@2x.png) 2x);
 }
-
 .contents .inner .sidebar .global_nav ul li .tour:before {
   content: "";
   position: absolute;
@@ -229,12 +199,10 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
 }
-
 .contents .inner .sidebar .global_nav ul li .tour:hover::before {
   background-image: -webkit-image-set(url(../img/menu_ico_07_hover.png) 1x, url(../img/menu_ico_07_hover@2x.png) 2x);
   background-image: image-set(url(../img/menu_ico_07_hover.png) 1x, url(../img/menu_ico_07_hover@2x.png) 2x);
 }
-
 .contents .inner .sidebar .global_nav ul li .forperformers:before {
   content: "";
   position: absolute;
@@ -247,12 +215,10 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
 }
-
 .contents .inner .sidebar .global_nav ul li .forperformers:hover::before {
   background-image: -webkit-image-set(url(../img/menu_ico_08_hover.png) 1x, url(../img/menu_ico_08_hover@2x.png) 2x);
   background-image: image-set(url(../img/menu_ico_08_hover.png) 1x, url(../img/menu_ico_08_hover@2x.png) 2x);
 }
-
 .contents .inner .sidebar .global_nav ul li .participant:before {
   content: "";
   position: absolute;
@@ -265,12 +231,10 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
 }
-
 .contents .inner .sidebar .global_nav ul li .participant:hover::before {
   background-image: -webkit-image-set(url(../img/menu_ico_09_hover.png) 1x, url(../img/menu_ico_09_hover@2x.png) 2x);
   background-image: image-set(url(../img/menu_ico_09_hover.png) 1x, url(../img/menu_ico_09_hover@2x.png) 2x);
 }
-
 .contents .inner .sidebar .global_nav ul li .access:before {
   content: "";
   position: absolute;
@@ -283,12 +247,10 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
 }
-
 .contents .inner .sidebar .global_nav ul li .access:hover::before {
   background-image: -webkit-image-set(url(../img/menu_ico_10_hover.png) 1x, url(../img/menu_ico_10_hover@2x.png) 2x);
   background-image: image-set(url(../img/menu_ico_10_hover.png) 1x, url(../img/menu_ico_10_hover@2x.png) 2x);
 }
-
 .contents .inner .sidebar .global_nav ul li .nursery:before {
   content: "";
   position: absolute;
@@ -301,12 +263,10 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
 }
-
 .contents .inner .sidebar .global_nav ul li .nursery:hover::before {
   background-image: -webkit-image-set(url(../img/menu_ico_11_hover.png) 1x, url(../img/menu_ico_11_hover@2x.png) 2x);
   background-image: image-set(url(../img/menu_ico_11_hover.png) 1x, url(../img/menu_ico_11_hover@2x.png) 2x);
 }
-
 .contents .inner .sidebar .global_nav ul li .sponsors:before {
   content: "";
   position: absolute;
@@ -319,23 +279,16 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
 }
-
 .contents .inner .sidebar .global_nav ul li .sponsors:hover::before {
   background-image: -webkit-image-set(url(../img/menu_ico_12_hover.png) 1x, url(../img/menu_ico_12_hover@2x.png) 2x);
   background-image: image-set(url(../img/menu_ico_12_hover.png) 1x, url(../img/menu_ico_12_hover@2x.png) 2x);
 }
-
 .contents .inner .sidebar .jimukyoku {
   font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
 }
-
 .contents .inner .sidebar .jimukyoku h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-indent: 1.25em;
   font-size: 18px;
   width: 280px;
@@ -343,51 +296,35 @@ body {
   margin: 0 auto;
   background-image: url(../img/jimukyoku_menu.png);
 }
-
 .contents .inner .sidebar .jimukyoku p {
   padding: 0 20px 20px 20px;
   font-size: 11px;
   color: #fff;
   line-height: 19px;
 }
-
 .contents .inner .sidebar .jimukyoku p a {
   color: yellow;
   text-decoration: underline;
 }
-
-.contents .inner .sidebar .bunnerarea_bottom {
+.contents .inner .sidebar .bannerarea_bottom {
   padding: 20px;
 }
-
-.contents .inner .sidebar .bunnerarea_bottom div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background: #ddd;
-  color: #333;
-  height: 300px;
+.contents .inner .sidebar .bannerarea_bottom div img {
+  margin-bottom: 20px;
 }
-
+.contents .inner .sidebar .bannerarea_bottom div img:last-child {
+  margin-bottom: 0;
+}
 .contents .inner .main {
   width: 700px;
   background-color: #fff;
   background-image: url(../img/main_bg.jpg);
   padding: 20px;
 }
-
 .contents .inner .main img {
-  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   margin: 0 0 20px 0;
 }
-
 .contents .inner .main .information h3 {
   font-weight: 700;
   letter-spacing: -2px;
@@ -395,7 +332,6 @@ body {
   color: #b60005;
   border-bottom: 3px solid #b60005;
 }
-
 .contents .inner .main .information .info_area {
   background-color: #fff;
   height: 130px;
@@ -403,7 +339,6 @@ body {
   overflow-x: hidden;
   padding: 15px;
 }
-
 .contents .inner .main .information .info_area ul li {
   font-size: 14px;
   font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
@@ -414,7 +349,6 @@ body {
   padding: 4px 0;
   margin: 0 0 4px 0;
 }
-
 .contents .inner .main .information .info_area ul li:before {
   text-indent: -0.2em;
   position: absolute;
@@ -457,7 +391,6 @@ body {
     background-position: -2050px 0;
   }
 }
-
 /*---------------------------- フッター ---------------------------- */
 .footer {
   font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
@@ -469,9 +402,7 @@ body {
   background-size: 1200px auto;
   text-align: center;
 }
-
 .footer span {
   display: inline-block;
   font-size: 0.6em;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

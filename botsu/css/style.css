@@ -4,13 +4,10 @@
 a {
   color: #b60005;
   opacity: 1;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-
 a:hover {
   opacity: 0.8;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
 
@@ -18,7 +15,7 @@ a:hover {
 body {
   font-size: 18px;
   line-height: 1.6em;
-  font-family: 'Source Serif Pro', serif;
+  font-family: "Source Serif Pro", serif;
   background-image: url(../img/background_paper_blue@2x.jpg);
   background-repeat: repeat-x;
   background-position: top center;
@@ -43,7 +40,6 @@ body {
   height: 160px;
   margin: 0;
 }
-
 .header h1 {
   width: 1000px;
   height: 160px;
@@ -51,7 +47,6 @@ body {
   padding: 0;
   overflow: hidden;
 }
-
 .header h1 a {
   display: block;
   width: 1000px;
@@ -60,18 +55,12 @@ body {
 
 /*---------------------------- コンテンツ ------------------------------- */
 .contents {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   padding: 20px;
   background: #fff;
   margin: 0 0 20px 0;
-  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
-          box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
 }
 
 /*---------------------------- サイドバー ---------------------------- */
@@ -80,27 +69,18 @@ body {
   background-color: rgba(255, 255, 255, 0.95);
   margin: 0 20px 0 0;
 }
-
 .sidebar .bunnerarea_top {
   width: 260px;
   height: 56px;
   margin: 0 0 20px 0;
 }
-
-.sidebar .bunnerarea_bottom {
+.sidebar .bannerarea_bottom {
   background-color: #eee;
   height: 400px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .sidebar .global-nav {
   padding: 15px;
   margin: 0 0 20px 0;
@@ -109,22 +89,16 @@ body {
   background-position: top center;
   background-size: 260px auto;
 }
-
 .sidebar .global-nav ul {
   line-height: 1.3em;
   font-weight: 900;
 }
-
 .sidebar .global-nav ul li a {
   color: #000;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 0 32px 0 34px;
   line-height: 1em;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   line-height: 44px;
   width: 230px;
   height: 40px;
@@ -134,10 +108,8 @@ body {
   background-position: left top;
   background-repeat: no-repeat;
   background-size: 230px auto;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-
 .sidebar .global-nav ul li a:before {
   content: "";
   width: 20px;
@@ -152,47 +124,39 @@ body {
   left: 5px;
   margin: auto;
 }
-
 .sidebar .global-nav ul li a:after {
   content: "";
   width: 8px;
   height: 8px;
   border-top: 2px solid #000;
   border-right: 2px solid #000;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
   position: absolute;
   top: 0;
   bottom: 0;
   margin: auto;
   right: 16px;
 }
-
 .sidebar .global-nav ul li a:hover {
   color: #fff;
   background-image: url(../img/navlist_red_hover_h40@2x.png);
   background-position: left top;
   background-repeat: no-repeat;
   background-size: 230px auto;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-
 .sidebar .global-nav ul li a:hover:before {
   background-image: url(../img/icon_hata_hover@2x.png);
   background-position: left top;
   background-repeat: no-repeat;
   background-size: 20px auto;
 }
-
 .sidebar .global-nav ul li a:hover:after {
   border-top: 2px solid #fff;
   border-right: 2px solid #fff;
   right: 10px;
-  -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
-
 .sidebar #home,
 .sidebar #welcome,
 .sidebar #program,
@@ -209,27 +173,19 @@ body {
   text-indent: unset;
   padding: 0 32px 0 34px;
   line-height: 1em;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .sidebar #speakers,
 .sidebar #participants {
   font-size: 0.8em;
 }
-
 .sidebar .contacts {
   margin: 0 0 30px 0;
 }
-
 .sidebar .contacts ul li {
   margin: 0 0 15px 0;
 }
-
 .sidebar .contacts ul li .cont-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-indent: 0.5em;
   font-size: 0.9em;
@@ -240,14 +196,12 @@ body {
   height: 30px;
   background: url(../img/navlist_gold_h30.png);
   margin: 0 0 10px 0;
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
 }
-
 .sidebar .contacts ul li address {
   font-size: 0.7em;
   line-height: 1.5em;
 }
-
 .sidebar .contacts ul li address a {
   text-decoration: underline;
 }
@@ -257,7 +211,6 @@ body {
   width: 680px;
   background-color: rgba(255, 255, 255, 0.95);
 }
-
 .main .main-image {
   width: 680px;
   height: 950px;
@@ -265,11 +218,9 @@ body {
   margin: 0 0 40px 0;
   overflow: hidden;
 }
-
 .main .information {
   line-height: 34px;
 }
-
 .main .information .info-ttl {
   width: 680px;
   height: 30px;
@@ -278,13 +229,12 @@ body {
   background-repeat: no-repeat;
   background-size: 680px auto;
   position: relative;
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
   font-weight: 700;
   color: #fff;
   text-indent: 0.5em;
   margin: 0 0 10px 0;
 }
-
 .main .information .info-ttl:before {
   content: "Information";
   font-weight: 400;
@@ -295,20 +245,15 @@ body {
   font-size: 1.4em;
   text-shadow: none;
 }
-
 .main .information .info-list {
   width: 680px;
   height: 250px;
   overflow-y: scroll;
   overflow-x: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   line-height: 1.4em;
 }
-
 .main .information .info-list dt {
   font-weight: 400;
   width: 18%;
@@ -318,7 +263,6 @@ body {
   text-indent: 1em;
   margin: 10px 0 0 0;
 }
-
 .main .information .info-list dt:before {
   content: "◆";
   font-size: 0.5em;
@@ -329,7 +273,6 @@ body {
   margin: auto;
   left: -1.5em;
 }
-
 .main .information .info-list dd {
   font-weight: 700;
   width: 82%;
@@ -338,19 +281,15 @@ body {
   font-size: 0.9em;
   margin: 10px 0 0 0;
 }
-
 .main .information .info-list dd p a {
   text-decoration: underline;
 }
-
 .main .information .info-list dd p a:hover {
   text-decoration: none;
 }
-
 .main .information_en {
   line-height: 34px;
 }
-
 .main .information_en .info-ttl {
   width: 680px;
   height: 30px;
@@ -359,13 +298,12 @@ body {
   background-repeat: no-repeat;
   background-size: 680px auto;
   position: relative;
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
   font-weight: 700;
   color: #fff;
   text-indent: 0.5em;
   margin: 0 0 10px 0;
 }
-
 .main .information_en .info-ttl:before {
   content: "";
   font-weight: 400;
@@ -376,20 +314,15 @@ body {
   font-size: 1.4em;
   text-shadow: none;
 }
-
 .main .information_en .info-list {
   width: 680px;
   height: 250px;
   overflow-y: scroll;
   overflow-x: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   line-height: 1.4em;
 }
-
 .main .information_en .info-list dt {
   font-weight: 400;
   width: 18%;
@@ -399,7 +332,6 @@ body {
   text-indent: 1em;
   margin: 10px 0 0 0;
 }
-
 .main .information_en .info-list dt:before {
   content: "◆";
   font-size: 0.5em;
@@ -410,7 +342,6 @@ body {
   margin: auto;
   left: -1.5em;
 }
-
 .main .information_en .info-list dd {
   font-weight: 400;
   width: 82%;
@@ -419,11 +350,9 @@ body {
   font-size: 0.9em;
   margin: 10px 0 0 0;
 }
-
 .main .information_en .info-list dd p a {
   text-decoration: underline;
 }
-
 .main .information_en .info-list dd p a:hover {
   text-decoration: none;
 }
@@ -458,7 +387,6 @@ body {
     background-position: -2050px 0;
   }
 }
-
 /*---------------------------- フッター ---------------------------- */
 .footer {
   height: 30px;
@@ -469,9 +397,7 @@ body {
   background-size: 1200px auto;
   text-align: center;
 }
-
 .footer span {
   display: inline-block;
   font-size: 0.6em;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

@@ -61,6 +61,7 @@ body {
 
 .contents {
     margin: 0 0 20px 0;
+
     .inner {
         display: flex;
         flex-wrap: wrap;
@@ -384,17 +385,17 @@ body {
                 }
             }
 
-            .bunnerarea_bottom {
+            .bannerarea_bottom {
                 padding: 20px;
 
                 div {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    img {
+                        margin-bottom: 20px;
 
-                    background: #ddd;
-                    color: #333;
-                    height: 300px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
                 }
 
             }
