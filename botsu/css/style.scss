@@ -1,0 +1,470 @@
+@charset "UTF-8";
+
+/*---------------------------- ベースカラー ---------------------------- */
+
+$primary_color: #b60005;
+$secondary_color: #a88d00;
+
+/*---------------------------- ベースリンクカラー ---------------------- */
+
+a {
+    color: $primary_color;
+    opacity: 1;
+    transition: 0.2s;
+
+    &:hover {
+        opacity: 0.8;
+        transition: 0.2s;
+    }
+}
+
+
+/*---------------------------- レイアウトクラス ------------------------- */
+
+body {
+    font-size: 18px;
+    line-height: 1.6em;
+    font-family: 'Source Serif Pro', serif;
+    background-image: url(../img/background_paper_blue@2x.jpg);
+    background-repeat: repeat-x;
+    background-position: top center;
+    background-size: 1400px auto;
+}
+
+.wrapper {
+    background-image: url(../img/background_illust@2x.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 1594px auto;
+    margin: 0 auto;
+}
+
+.inner {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+/*---------------------------- ヘッダー --------------------------------- */
+
+.header {
+    height: 160px;
+    margin: 0;
+
+    h1 {
+        width: 1000px;
+        height: 160px;
+        margin: 0 auto;
+        padding: 0;
+        overflow: hidden;
+
+        a {
+            display: block;
+            width: 1000px;
+            height: 160px;
+
+        }
+    }
+}
+
+/*---------------------------- コンテンツ ------------------------------- */
+
+.contents {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    background: #fff;
+    margin: 0 0 20px 0;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+}
+
+/*---------------------------- サイドバー ---------------------------- */
+
+
+.sidebar {
+    width: 260px;
+    background-color: rgba(255, 255, 255, 0.95);
+    margin: 0 20px 0 0;
+
+    .bunnerarea_top {
+        width: 260px;
+        height: 56px;
+        margin: 0 0 20px 0;
+    }
+
+    .bunnerarea_bottom {
+        background-color: #eee;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .global-nav {
+        padding: 15px;
+        margin: 0 0 20px 0;
+        background-image: url(../img/sidebar_background@2x.jpg);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: 260px auto;
+
+        ul {
+            line-height: 1.3em;
+            font-weight: 900;
+
+            li {
+                a {
+
+                    color: #000;
+                    display: flex;
+
+                    // align-items: center;
+                    padding: 0 32px 0 34px;
+                    line-height: 1em;
+                    align-items: center;
+                    // text-indent: 2em;
+
+                    line-height: 44px;
+                    width: 230px;
+                    height: 40px;
+                    position: relative;
+                    margin: 0 0 10px 0;
+                    background-image: url(../img/navlist_red_static_h40@2x.png);
+                    background-position: left top;
+                    background-repeat: no-repeat;
+                    background-size: 230px auto;
+                    transition: all 0.2s;
+
+                    &:before {
+                        content: "";
+                        width: 20px;
+                        height: 20px;
+                        background-image: url(../img/icon_hata_static@2x.png);
+                        background-position: left top;
+                        background-repeat: no-repeat;
+                        background-size: 20px auto;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 5px;
+                        margin: auto;
+                    }
+
+                    &:after {
+                        content: "";
+                        width: 8px;
+                        height: 8px;
+                        border-top: 2px solid #000;
+                        border-right: 2px solid #000;
+                        transform: rotate(45deg);
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        margin: auto;
+                        right: 16px;
+                    }
+
+                    &:hover {
+                        color: #fff;
+                        background-image: url(../img/navlist_red_hover_h40@2x.png);
+                        background-position: left top;
+                        background-repeat: no-repeat;
+                        background-size: 230px auto;
+                        transition: all 0.2s;
+
+                        &:before {
+                            background-image: url(../img/icon_hata_hover@2x.png);
+                            background-position: left top;
+                            background-repeat: no-repeat;
+                            background-size: 20px auto;
+                        }
+
+                        &:after {
+                            border-top: 2px solid #fff;
+                            border-right: 2px solid #fff;
+                            right: 10px;
+                            transition: all 0.2s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #home,
+    #welcome,
+    #program,
+    #call,
+    #regist,
+    #accommodation,
+    #speakers,
+    #participants,
+    #access,
+    #nursery,
+    #sponsors {
+        font-weight: normal;
+        font-size: 0.9em;
+        text-indent: unset;
+        padding: 0 32px 0 34px;
+        line-height: 1em;
+        align-items: center;
+    }
+
+    #speakers,
+    #participants {
+        font-size: 0.8em;
+    }
+
+    .contacts {
+        margin: 0 0 30px 0;
+
+        ul {
+            li {
+                margin: 0 0 15px 0;
+
+                .cont-title {
+                    display: flex;
+                    // align-items: center;
+                    text-indent: 0.5em;
+                    font-size: 0.9em;
+                    font-weight: 900;
+                    line-height: 34px;
+                    color: #fff;
+                    width: 260px;
+                    height: 30px;
+                    background: url(../img/navlist_gold_h30.png);
+                    margin: 0 0 10px 0;
+                    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+                }
+
+                address {
+                    font-size: 0.7em;
+                    line-height: 1.5em;
+
+                    a {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*---------------------------- メイン ---------------------------- */
+
+.main {
+    width: 680px;
+    background-color: rgba(255, 255, 255, 0.95);
+
+    .main-image {
+        width: 680px;
+        height: 950px;
+        border: 2px solid #eee;
+        margin: 0 0 40px 0;
+        overflow: hidden;
+    }
+
+    .information {
+        line-height: 34px;
+
+        .info-ttl {
+            width: 680px;
+            height: 30px;
+            background-image: url(../img/info_red_h30@2x.png);
+            background-position: left top;
+            background-repeat: no-repeat;
+            background-size: 680px auto;
+            position: relative;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+            font-weight: 700;
+            color: #fff;
+            text-indent: 0.5em;
+            margin: 0 0 10px 0;
+
+            &:before {
+                content: "Information";
+                font-weight: 400;
+                color: $primary_color;
+                position: absolute;
+                top: -28px;
+                left: -8px;
+                font-size: 1.4em;
+                text-shadow: none;
+            }
+        }
+
+        .info-list {
+            width: 680px;
+            height: 250px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            line-height: 1.4em;
+
+            dt {
+                font-weight: 400;
+                width: 18%;
+                border-bottom: 1px dotted #000;
+                min-height: 30px;
+                position: relative;
+                text-indent: 1em;
+                margin: 10px 0 0 0;
+
+                &:before {
+                    content: "◆";
+                    font-size: 0.5em;
+                    color: $primary_color;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    left: -1.5em;
+                }
+            }
+
+            dd {
+                font-weight: 700;
+                width: 82%;
+                border-bottom: 1px dotted #000;
+                min-height: 30px;
+                font-size: 0.9em;
+                margin: 10px 0 0 0;
+
+                p {
+                    a {
+                        text-decoration: underline;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .information_en {
+        line-height: 34px;
+
+        .info-ttl {
+            width: 680px;
+            height: 30px;
+            background-image: url(../img/info_red_h30@2x.png);
+            background-position: left top;
+            background-repeat: no-repeat;
+            background-size: 680px auto;
+            position: relative;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+            font-weight: 700;
+            color: #fff;
+            text-indent: 0.5em;
+            margin: 0 0 10px 0;
+
+            &:before {
+                content: "";
+                font-weight: 400;
+                color: $primary_color;
+                position: absolute;
+                top: -28px;
+                left: -8px;
+                font-size: 1.4em;
+                text-shadow: none;
+            }
+        }
+
+        .info-list {
+            width: 680px;
+            height: 250px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+            display: flex;
+            flex-wrap: wrap;
+            line-height: 1.4em;
+
+            dt {
+                font-weight: 400;
+                width: 18%;
+                border-bottom: 1px dotted #000;
+                min-height: 30px;
+                position: relative;
+                text-indent: 1em;
+                margin: 10px 0 0 0;
+
+                &:before {
+                    content: "◆";
+                    font-size: 0.5em;
+                    color: $primary_color;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                    left: -1.5em;
+                }
+            }
+
+            dd {
+                font-weight: 400;
+                width: 82%;
+                border-bottom: 1px dotted #000;
+                min-height: 30px;
+                font-size: 0.9em;
+                margin: 10px 0 0 0;
+
+                p {
+                    a {
+                        text-decoration: underline;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+/*---------------------------- スライダー ---------------------------- */
+
+.slider {
+    width: 100%;
+    height: 116px;
+    background-image: url(../img/footer_scroll@2x.png);
+    background-repeat: repeat-x;
+    background-size: 2050px auto;
+    background-position: center;
+    margin: 0 0 20px 0;
+    animation: bgloop 40s linear infinite;
+    // ↑↑↑↑↑画像スクロール速度の変更↑↑↑↑↑
+}
+
+@keyframes bgloop {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -2050px 0;
+        // ↑↑↑↑↑widthの正負の値でスクロールの向きが変わる↑↑↑↑↑
+    }
+}
+
+/*---------------------------- フッター ---------------------------- */
+
+
+.footer {
+    height: 30px;
+    color: #fff;
+    background-image: url(../img/footer_red@2x.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 1200px auto;
+    text-align: center;
+
+    span {
+        display: inline-block;
+        font-size: 0.6em;
+    }
+}

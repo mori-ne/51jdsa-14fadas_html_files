@@ -1,0 +1,503 @@
+@charset "UTF-8";
+
+/*---------------------------- ベースカラー ---------------------------- */
+
+$primary_color: #0a4682;
+$secondary_color: #b60005;
+
+/*---------------------------- ベースリンクカラー ---------------------- */
+
+
+/*---------------------------- リンクホバー ---------------------- */
+
+a {
+    color: #333333;
+    transition: all 0.2s;
+
+    &:hover {
+        opacity: 0.8;
+        transition: all 0.2s;
+    }
+}
+
+/*---------------------------- レイアウトクラス ------------------------- */
+
+body {
+    font-family: 'Source Serif Pro', "Hiragino Sans W3", serif;
+    // ベースのフォントサイズ
+    font-size: 16px;
+
+    background-image: url(../img/bg_paper.jpg);
+    background-position: center top;
+    background-repeat: repeat-x;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+
+    background-image: url(../img/bg_building.png);
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.inner {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.header {
+    .inner {
+        a {
+            display: block;
+
+            img {
+                width: 1000px;
+                height: 160px;
+            }
+        }
+    }
+}
+
+.contents {
+    margin: 0 0 20px 0;
+    .inner {
+        display: flex;
+        flex-wrap: wrap;
+
+        .sidebar {
+            width: 300px;
+            background: $primary_color;
+
+            .bunnerarea {
+                padding: 20px;
+            }
+
+            .global_nav {
+                padding: 0 10px 10px 10px;
+
+                ul {
+                    border-top: 2px solid #fff;
+                    padding: 10px 0 0 0;
+
+                    li {
+                        width: 280px;
+                        height: 50px;
+                        margin: 0 0 10px 0;
+                        border-top: 2px solid rgba(255, 255, 255, 0.1);
+                        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+
+                        a {
+                            font-weight: 700;
+                            font-size: 18px;
+                            display: block;
+                            width: 280px;
+                            height: 50px;
+                            color: #fff;
+                            text-indent: 60px;
+                            line-height: 2.7em;
+                            transition: all 0.2s;
+                            background-image: url(../img/menu_static.png);
+                            position: relative;
+
+                            &:hover {
+                                color: #333;
+                                transition: all 0.2s;
+                                opacity: 1;
+                                border-radius: 4px;
+                                background-image: url(../img/menu_hover.png);
+                            }
+                        }
+
+                        /*--------------------------------- メニューアイコンクラス----------------------------*/
+                        .top {
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                top: 8px;
+                                left: 15px;
+                                width: 30px;
+                                height: 30px;
+                                background-image: image-set(url(../img/menu_ico_01.png) 1x, url(../img/menu_ico_01@2x.png) 2x);
+                                background-position: center center;
+                                background-repeat: no-repeat;
+                            }
+
+                            &:hover {
+                                &::before {
+                                    background-image: image-set(url(../img/menu_ico_01_hover.png) 1x, url(../img/menu_ico_01_hover@2x.png) 2x);
+                                }
+                            }
+                        }
+
+                        .greeting {
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                top: 8px;
+                                left: 15px;
+                                width: 30px;
+                                height: 30px;
+                                background-image: image-set(url(../img/menu_ico_02.png) 1x, url(../img/menu_ico_02@2x.png) 2x);
+                                background-position: center center;
+                                background-repeat: no-repeat;
+                            }
+
+                            &:hover {
+                                &::before {
+                                    background-image: image-set(url(../img/menu_ico_02_hover.png) 1x, url(../img/menu_ico_02_hover@2x.png) 2x);
+                                }
+                            }
+                        }
+
+                        .about {
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                top: 8px;
+                                left: 15px;
+                                width: 30px;
+                                height: 30px;
+                                background-image: image-set(url(../img/menu_ico_03.png) 1x, url(../img/menu_ico_03@2x.png) 2x);
+                                background-position: center center;
+                                background-repeat: no-repeat;
+                            }
+
+                            &:hover {
+                                &::before {
+                                    background-image: image-set(url(../img/menu_ico_03_hover.png) 1x, url(../img/menu_ico_03_hover@2x.png) 2x);
+                                }
+                            }
+                        }
+
+                        .program {
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                top: 8px;
+                                left: 15px;
+                                width: 30px;
+                                height: 30px;
+                                background-image: image-set(url(../img/menu_ico_04.png) 1x, url(../img/menu_ico_04@2x.png) 2x);
+                                background-position: center center;
+                                background-repeat: no-repeat;
+                            }
+
+                            &:hover {
+                                &::before {
+                                    background-image: image-set(url(../img/menu_ico_04_hover.png) 1x, url(../img/menu_ico_04_hover@2x.png) 2x);
+                                }
+                            }
+                        }
+
+                        .abstracts {
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                top: 8px;
+                                left: 15px;
+                                width: 30px;
+                                height: 30px;
+                                background-image: image-set(url(../img/menu_ico_05.png) 1x, url(../img/menu_ico_05@2x.png) 2x);
+                                background-position: center center;
+                                background-repeat: no-repeat;
+                            }
+
+                            &:hover {
+                                &::before {
+                                    background-image: image-set(url(../img/menu_ico_05_hover.png) 1x, url(../img/menu_ico_05_hover@2x.png) 2x);
+                                }
+                            }
+                        }
+
+                        .register {
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                top: 8px;
+                                left: 15px;
+                                width: 30px;
+                                height: 30px;
+                                background-image: image-set(url(../img/menu_ico_06.png) 1x, url(../img/menu_ico_06@2x.png) 2x);
+                                background-position: center center;
+                                background-repeat: no-repeat;
+                            }
+
+                            &:hover {
+                                &::before {
+                                    background-image: image-set(url(../img/menu_ico_06_hover.png) 1x, url(../img/menu_ico_06_hover@2x.png) 2x);
+                                }
+                            }
+                        }
+
+                        .tour {
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                top: 8px;
+                                left: 15px;
+                                width: 30px;
+                                height: 30px;
+                                background-image: image-set(url(../img/menu_ico_07.png) 1x, url(../img/menu_ico_07@2x.png) 2x);
+                                background-position: center center;
+                                background-repeat: no-repeat;
+                            }
+
+                            &:hover {
+                                &::before {
+                                    background-image: image-set(url(../img/menu_ico_07_hover.png) 1x, url(../img/menu_ico_07_hover@2x.png) 2x);
+                                }
+                            }
+                        }
+
+                        .forperformers {
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                top: 8px;
+                                left: 15px;
+                                width: 30px;
+                                height: 30px;
+                                background-image: image-set(url(../img/menu_ico_08.png) 1x, url(../img/menu_ico_08@2x.png) 2x);
+                                background-position: center center;
+                                background-repeat: no-repeat;
+                            }
+
+                            &:hover {
+                                &::before {
+                                    background-image: image-set(url(../img/menu_ico_08_hover.png) 1x, url(../img/menu_ico_08_hover@2x.png) 2x);
+                                }
+                            }
+                        }
+
+                        .participant {
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                top: 8px;
+                                left: 15px;
+                                width: 30px;
+                                height: 30px;
+                                background-image: image-set(url(../img/menu_ico_09.png) 1x, url(../img/menu_ico_09@2x.png) 2x);
+                                background-position: center center;
+                                background-repeat: no-repeat;
+                            }
+
+                            &:hover {
+                                &::before {
+                                    background-image: image-set(url(../img/menu_ico_09_hover.png) 1x, url(../img/menu_ico_09_hover@2x.png) 2x);
+                                }
+                            }
+                        }
+
+
+                        .access {
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                top: 8px;
+                                left: 15px;
+                                width: 30px;
+                                height: 30px;
+                                background-image: image-set(url(../img/menu_ico_10.png) 1x, url(../img/menu_ico_10@2x.png) 2x);
+                                background-position: center center;
+                                background-repeat: no-repeat;
+                            }
+
+                            &:hover {
+                                &::before {
+                                    background-image: image-set(url(../img/menu_ico_10_hover.png) 1x, url(../img/menu_ico_10_hover@2x.png) 2x);
+                                }
+                            }
+                        }
+
+                        .nursery {
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                top: 8px;
+                                left: 15px;
+                                width: 30px;
+                                height: 30px;
+                                background-image: image-set(url(../img/menu_ico_11.png) 1x, url(../img/menu_ico_11@2x.png) 2x);
+                                background-position: center center;
+                                background-repeat: no-repeat;
+                            }
+
+                            &:hover {
+                                &::before {
+                                    background-image: image-set(url(../img/menu_ico_11_hover.png) 1x, url(../img/menu_ico_11_hover@2x.png) 2x);
+                                }
+                            }
+                        }
+
+                        .sponsors {
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                top: 8px;
+                                left: 15px;
+                                width: 30px;
+                                height: 30px;
+                                background-image: image-set(url(../img/menu_ico_12.png) 1x, url(../img/menu_ico_12@2x.png) 2x);
+                                background-position: center center;
+                                background-repeat: no-repeat;
+                            }
+
+                            &:hover {
+                                &::before {
+                                    background-image: image-set(url(../img/menu_ico_12_hover.png) 1x, url(../img/menu_ico_12_hover@2x.png) 2x);
+                                }
+                            }
+                        }
+
+                        /*--------------------------------- メニューアイコンクラスここまで----------------------------*/
+
+                    }
+                }
+            }
+
+            .jimukyoku {
+                font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+
+                h2 {
+                    display: flex;
+                    align-items: center;
+                    text-indent: 1.25em;
+                    font-size: 18px;
+                    width: 280px;
+                    height: 90px;
+                    margin: 0 auto;
+                    background-image: url(../img/jimukyoku_menu.png);
+                }
+
+                p {
+                    padding: 0 20px 20px 20px;
+                    font-size: 11px;
+                    color: #fff;
+                    line-height: 19px;
+
+                    a {
+                        color: yellow;
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .bunnerarea_bottom {
+                padding: 20px;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    background: #ddd;
+                    color: #333;
+                    height: 300px;
+                }
+
+            }
+        }
+
+        .main {
+            width: 700px;
+            background-color: #fff;
+            background-image: url(../img/main_bg.jpg);
+            padding: 20px;
+
+            img {
+                box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+                margin: 0 0 20px 0;
+            }
+
+            .information {
+                h3 {
+                    font-weight: 700;
+                    letter-spacing: -2px;
+                    font-size: 18px;
+                    color: $secondary_color;
+                    border-bottom: 3px solid $secondary_color;
+                }
+
+                .info_area {
+                    background-color: #fff;
+                    height: 130px;
+                    overflow-y: scroll;
+                    overflow-x: hidden;
+                    padding: 15px;
+
+                    ul {
+                        li {
+                            font-size: 14px;
+                            font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+                            position: relative;
+                            text-indent: 1em;
+                            vertical-align: middle;
+                            border-bottom: 1px solid #eee;
+                            padding: 4px 0;
+                            margin: 0 0 4px 0;
+
+                            &:before {
+                                text-indent: -0.2em;
+                                position: absolute;
+                                content: "◆";
+                                top: 4px;
+                                left: 0;
+                                font-size: 12px;
+                                color: $secondary_color;
+                                width: 10px;
+                                height: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+/*---------------------------- スライダー ---------------------------- */
+
+.slider {
+    width: 100%;
+    height: 116px;
+    background-image: url(../img/footer_scroll@2x.png);
+    background-repeat: repeat-x;
+    background-size: 2050px auto;
+    background-position: center;
+    margin: 0 0 20px 0;
+    animation: bgloop 40s linear infinite;
+    // ↑↑↑↑↑画像スクロール速度の変更↑↑↑↑↑
+}
+
+@keyframes bgloop {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: -2050px 0;
+        // ↑↑↑↑↑widthの正負の値でスクロールの向きが変わる↑↑↑↑↑
+    }
+}
+
+/*---------------------------- フッター ---------------------------- */
+
+
+.footer {
+    font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+    height: 30px;
+    color: $secondary_color;
+    background-image: url(../img/footer_red@2x.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 1200px auto;
+    text-align: center;
+
+    span {
+        display: inline-block;
+        font-size: 0.6em;
+    }
+}
