@@ -112,6 +112,8 @@ body {
 
                         /*--------------------------------- メニューアイコンクラス----------------------------*/
                         .top {
+                            font-weight: normal;
+
                             &:before {
                                 content: "";
                                 position: absolute;
@@ -211,7 +213,7 @@ body {
                             }
                         }
 
-                        .register {
+                        .adpted {
                             &:before {
                                 content: "";
                                 position: absolute;
@@ -231,7 +233,7 @@ body {
                             }
                         }
 
-                        .tour {
+                        .forpersonandspeakers {
                             &:before {
                                 content: "";
                                 position: absolute;
@@ -251,7 +253,7 @@ body {
                             }
                         }
 
-                        .forperformers {
+                        .register {
                             &:before {
                                 content: "";
                                 position: absolute;
@@ -271,7 +273,7 @@ body {
                             }
                         }
 
-                        .participant {
+                        .forparticipant {
                             &:before {
                                 content: "";
                                 position: absolute;
@@ -291,8 +293,7 @@ body {
                             }
                         }
 
-
-                        .access {
+                        .units {
                             &:before {
                                 content: "";
                                 position: absolute;
@@ -312,7 +313,7 @@ body {
                             }
                         }
 
-                        .nursery {
+                        .information {
                             &:before {
                                 content: "";
                                 position: absolute;
@@ -332,7 +333,7 @@ body {
                             }
                         }
 
-                        .sponsors {
+                        .access {
                             &:before {
                                 content: "";
                                 position: absolute;
@@ -352,6 +353,66 @@ body {
                             }
                         }
 
+                        .nursery {
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                top: 8px;
+                                left: 15px;
+                                width: 30px;
+                                height: 30px;
+                                background-image: image-set(url(../img/menu_ico_13.png) 1x, url(../img/menu_ico_13@2x.png) 2x);
+                                background-position: center center;
+                                background-repeat: no-repeat;
+                            }
+
+                            &:hover {
+                                &::before {
+                                    background-image: image-set(url(../img/menu_ico_13_hover.png) 1x, url(../img/menu_ico_13_hover@2x.png) 2x);
+                                }
+                            }
+                        }
+
+                        .sponsors {
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                top: 8px;
+                                left: 15px;
+                                width: 30px;
+                                height: 30px;
+                                background-image: image-set(url(../img/menu_ico_14.png) 1x, url(../img/menu_ico_14@2x.png) 2x);
+                                background-position: center center;
+                                background-repeat: no-repeat;
+                            }
+
+                            &:hover {
+                                &::before {
+                                    background-image: image-set(url(../img/menu_ico_14_hover.png) 1x, url(../img/menu_ico_14_hover@2x.png) 2x);
+                                }
+                            }
+                        }
+
+                        .links {
+                            &:before {
+                                content: "";
+                                position: absolute;
+                                top: 8px;
+                                left: 15px;
+                                width: 30px;
+                                height: 30px;
+                                background-image: image-set(url(../img/menu_ico_15.png) 1x, url(../img/menu_ico_15@2x.png) 2x);
+                                background-position: center center;
+                                background-repeat: no-repeat;
+                            }
+
+                            &:hover {
+                                &::before {
+                                    background-image: image-set(url(../img/menu_ico_15_hover.png) 1x, url(../img/menu_ico_15_hover@2x.png) 2x);
+                                }
+                            }
+                        }
+
                         /*--------------------------------- メニューアイコンクラスここまで----------------------------*/
 
                     }
@@ -360,6 +421,7 @@ body {
 
             .jimukyoku {
                 font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+                margin: 0 0 25px 0;
 
                 h2 {
                     display: flex;
@@ -382,6 +444,31 @@ body {
                         color: yellow;
                         text-decoration: underline;
                     }
+                }
+            }
+
+            .qrarea {
+                font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+                margin: 0 0 30px 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                h2 {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    text-indent: 0.75em;
+                    font-size: 18px;
+                    width: 260px;
+                    margin: 0 auto;
+                    height: 52px;
+                    background: url(../img/nav_ttlbar.png);
+                    margin: 0 0 20px 0;
+                }
+
+                img {
+                    width: 120px;
                 }
             }
 

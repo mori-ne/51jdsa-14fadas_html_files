@@ -164,8 +164,8 @@ body {
 .sidebar #regist,
 .sidebar #accommodation,
 .sidebar #speakers,
-.sidebar #participants,
-.sidebar #access,
+.sidebar #forparticipants,
+.sidebar #information,
 .sidebar #nursery,
 .sidebar #sponsors {
   font-weight: normal;
@@ -176,7 +176,7 @@ body {
   align-items: center;
 }
 .sidebar #speakers,
-.sidebar #participants {
+.sidebar #forparticipants {
   font-size: 0.8em;
 }
 .sidebar .contacts {
