@@ -27,18 +27,14 @@ body {
     // ベースのフォントサイズ
     font-size: 16px;
 
-    background-image: url(../img/bg_paper.jpg);
-    background-position: center top;
-    background-repeat: repeat-x;
+    // background-image: url(../img/bg_paper_repeat.jpg);
+    // background-position: center top;
+    // background-repeat: repeat;
 }
 
 .wrapper {
     width: 100%;
     margin: 0 auto;
-
-    background-image: url(../img/bg_building.png);
-    background-position: center top;
-    background-repeat: no-repeat;
 }
 
 .inner {
@@ -59,7 +55,17 @@ body {
     }
 }
 
+.contents_wrap {
+    background-image: url(../img/bg_paper_repeat.jpg);
+    background-position: center top;
+    background-repeat: repeat;
+}
+
 .contents {
+    background-image: url(../img/bg_building2.png);
+    background-position: center top;
+    background-repeat: repeat-y;
+
     position: relative;
     margin: 0 0 20px 0;
 
