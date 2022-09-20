@@ -46,11 +46,13 @@ body {
   background-position: center top;
   background-repeat: repeat-y;
   position: relative;
-  margin: 0 0 20px 0;
+  margin: 0;
 }
 .contents .inner {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
+  z-index: 1;
 }
 .contents .inner .sidebar {
   width: 300px;
@@ -439,6 +441,33 @@ body {
   height: 10px;
 }
 
+.contents_bottom_wrap {
+  position: relative;
+  height: 30px;
+  margin: 0 auto;
+  background: url(../img/bg_paper_repeat_bottom.jpg);
+  margin-bottom: 30px;
+}
+
+.contents_bottom {
+  position: relative;
+  width: 1000px;
+  height: 30px;
+  background: url(../img/main_bg.jpg);
+  margin: 0 auto 30px auto;
+  z-index: 2;
+}
+.contents_bottom:before {
+  content: "";
+  width: 300px;
+  height: 30px;
+  background: #0a4682;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+
 /*---------------------------- スライダー ---------------------------- */
 .slider {
   width: 100%;
@@ -485,6 +514,10 @@ body {
   font-size: 0.6em;
 }
 
+#pagetop {
+  position: fixed;
+  z-index: 9998;
+}
 #pagetop a {
   font-family: sans-serif;
   font-size: 16px;
@@ -503,4 +536,5 @@ body {
   position: fixed;
   bottom: 0;
   right: 20px;
+  z-index: 9999;
 }/*# sourceMappingURL=style.css.map */

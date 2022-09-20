@@ -67,11 +67,14 @@ body {
     background-repeat: repeat-y;
 
     position: relative;
-    margin: 0 0 20px 0;
+    margin: 0;
 
     .inner {
+        position: relative;
         display: flex;
         flex-wrap: wrap;
+        // box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+        z-index: 1;
 
         .sidebar {
             width: 300px;
@@ -553,6 +556,35 @@ body {
     }
 }
 
+.contents_bottom_wrap {
+    position: relative;
+    height: 30px;
+    margin: 0 auto;
+    background: url(../img/bg_paper_repeat_bottom.jpg);
+    margin-bottom: 30px;
+}
+
+.contents_bottom {
+    position: relative;
+    width: 1000px;
+    height: 30px;
+    background: url(../img/main_bg.jpg);
+    margin: 0 auto 30px auto;
+    // box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+
+    &:before {
+        content: "";
+        width: 300px;
+        height: 30px;
+        background: #0a4682;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+    }
+}
+
 /*---------------------------- スライダー ---------------------------- */
 
 .slider {
@@ -598,6 +630,9 @@ body {
 }
 
 #pagetop {
+    position: fixed;
+    z-index: 9998;
+
     a {
         font-family: sans-serif;
         font-size: 16px;
@@ -617,5 +652,6 @@ body {
         position: fixed;
         bottom: 0;
         right: 20px;
+        z-index: 9999;
     }
 }
