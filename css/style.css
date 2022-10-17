@@ -384,6 +384,400 @@ th {
 
 /*---------------------------- ベースカラー ---------------------------- */
 /*---------------------------- ベースリンクカラー ---------------------- */
+.sidebar {
+  width: 300px;
+  background: #0a4682;
+}
+.sidebar .bunnerarea {
+  padding: 20px;
+}
+.sidebar .global_nav {
+  padding: 0 10px 10px 10px;
+}
+.sidebar .global_nav ul {
+  border-top: 2px solid #fff;
+  padding: 10px 0 0 0;
+}
+.sidebar .global_nav ul li {
+  margin: 0 0 10px 0;
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  /*--------------------------------- メニューアイコンクラス----------------------------*/
+  /*--------------------------------- メニューアイコンクラスここまで----------------------------*/
+}
+.sidebar .global_nav ul li a {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.1;
+  width: 280px;
+  height: 50px;
+  color: #fff;
+  padding: 0 0 0 60px;
+  transition: all 0.2s;
+  background-image: url(../img/menu_static.png);
+  position: relative;
+}
+.sidebar .global_nav ul li a:hover {
+  color: #333;
+  transition: all 0.2s;
+  opacity: 1;
+  border-radius: 4px;
+  background-image: url(../img/menu_hover.png);
+}
+.sidebar .global_nav ul li .top {
+  font-weight: normal;
+}
+.sidebar .global_nav ul li .top:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  background-image: -webkit-image-set(url(../img/menu_ico_01.png) 1x, url(../img/menu_ico_01@2x.png) 2x);
+  background-image: image-set(url(../img/menu_ico_01.png) 1x, url(../img/menu_ico_01@2x.png) 2x);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.sidebar .global_nav ul li .top:hover::before {
+  background-image: -webkit-image-set(url(../img/menu_ico_01_hover.png) 1x, url(../img/menu_ico_01_hover@2x.png) 2x);
+  background-image: image-set(url(../img/menu_ico_01_hover.png) 1x, url(../img/menu_ico_01_hover@2x.png) 2x);
+}
+.sidebar .global_nav ul li .greeting:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  background-image: -webkit-image-set(url(../img/menu_ico_02.png) 1x, url(../img/menu_ico_02@2x.png) 2x);
+  background-image: image-set(url(../img/menu_ico_02.png) 1x, url(../img/menu_ico_02@2x.png) 2x);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.sidebar .global_nav ul li .greeting:hover::before {
+  background-image: -webkit-image-set(url(../img/menu_ico_02_hover.png) 1x, url(../img/menu_ico_02_hover@2x.png) 2x);
+  background-image: image-set(url(../img/menu_ico_02_hover.png) 1x, url(../img/menu_ico_02_hover@2x.png) 2x);
+}
+.sidebar .global_nav ul li .about:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  background-image: -webkit-image-set(url(../img/menu_ico_03.png) 1x, url(../img/menu_ico_03@2x.png) 2x);
+  background-image: image-set(url(../img/menu_ico_03.png) 1x, url(../img/menu_ico_03@2x.png) 2x);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.sidebar .global_nav ul li .about:hover::before {
+  background-image: -webkit-image-set(url(../img/menu_ico_03_hover.png) 1x, url(../img/menu_ico_03_hover@2x.png) 2x);
+  background-image: image-set(url(../img/menu_ico_03_hover.png) 1x, url(../img/menu_ico_03_hover@2x.png) 2x);
+}
+.sidebar .global_nav ul li .program:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  background-image: -webkit-image-set(url(../img/menu_ico_04.png) 1x, url(../img/menu_ico_04@2x.png) 2x);
+  background-image: image-set(url(../img/menu_ico_04.png) 1x, url(../img/menu_ico_04@2x.png) 2x);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.sidebar .global_nav ul li .program:hover::before {
+  background-image: -webkit-image-set(url(../img/menu_ico_04_hover.png) 1x, url(../img/menu_ico_04_hover@2x.png) 2x);
+  background-image: image-set(url(../img/menu_ico_04_hover.png) 1x, url(../img/menu_ico_04_hover@2x.png) 2x);
+}
+.sidebar .global_nav ul li .abstracts:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  background-image: -webkit-image-set(url(../img/menu_ico_05.png) 1x, url(../img/menu_ico_05@2x.png) 2x);
+  background-image: image-set(url(../img/menu_ico_05.png) 1x, url(../img/menu_ico_05@2x.png) 2x);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.sidebar .global_nav ul li .abstracts:hover::before {
+  background-image: -webkit-image-set(url(../img/menu_ico_05_hover.png) 1x, url(../img/menu_ico_05_hover@2x.png) 2x);
+  background-image: image-set(url(../img/menu_ico_05_hover.png) 1x, url(../img/menu_ico_05_hover@2x.png) 2x);
+}
+.sidebar .global_nav ul li .adpted:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  background-image: -webkit-image-set(url(../img/menu_ico_06.png) 1x, url(../img/menu_ico_06@2x.png) 2x);
+  background-image: image-set(url(../img/menu_ico_06.png) 1x, url(../img/menu_ico_06@2x.png) 2x);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.sidebar .global_nav ul li .adpted:hover::before {
+  background-image: -webkit-image-set(url(../img/menu_ico_06_hover.png) 1x, url(../img/menu_ico_06_hover@2x.png) 2x);
+  background-image: image-set(url(../img/menu_ico_06_hover.png) 1x, url(../img/menu_ico_06_hover@2x.png) 2x);
+}
+.sidebar .global_nav ul li .forpersonandspeakers:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  background-image: -webkit-image-set(url(../img/menu_ico_07.png) 1x, url(../img/menu_ico_07@2x.png) 2x);
+  background-image: image-set(url(../img/menu_ico_07.png) 1x, url(../img/menu_ico_07@2x.png) 2x);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.sidebar .global_nav ul li .forpersonandspeakers:hover::before {
+  background-image: -webkit-image-set(url(../img/menu_ico_07_hover.png) 1x, url(../img/menu_ico_07_hover@2x.png) 2x);
+  background-image: image-set(url(../img/menu_ico_07_hover.png) 1x, url(../img/menu_ico_07_hover@2x.png) 2x);
+}
+.sidebar .global_nav ul li .register:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  background-image: -webkit-image-set(url(../img/menu_ico_08.png) 1x, url(../img/menu_ico_08@2x.png) 2x);
+  background-image: image-set(url(../img/menu_ico_08.png) 1x, url(../img/menu_ico_08@2x.png) 2x);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.sidebar .global_nav ul li .register:hover::before {
+  background-image: -webkit-image-set(url(../img/menu_ico_08_hover.png) 1x, url(../img/menu_ico_08_hover@2x.png) 2x);
+  background-image: image-set(url(../img/menu_ico_08_hover.png) 1x, url(../img/menu_ico_08_hover@2x.png) 2x);
+}
+.sidebar .global_nav ul li .forparticipant:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  background-image: -webkit-image-set(url(../img/menu_ico_09.png) 1x, url(../img/menu_ico_09@2x.png) 2x);
+  background-image: image-set(url(../img/menu_ico_09.png) 1x, url(../img/menu_ico_09@2x.png) 2x);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.sidebar .global_nav ul li .forparticipant:hover::before {
+  background-image: -webkit-image-set(url(../img/menu_ico_09_hover.png) 1x, url(../img/menu_ico_09_hover@2x.png) 2x);
+  background-image: image-set(url(../img/menu_ico_09_hover.png) 1x, url(../img/menu_ico_09_hover@2x.png) 2x);
+}
+.sidebar .global_nav ul li .units:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  background-image: -webkit-image-set(url(../img/menu_ico_10.png) 1x, url(../img/menu_ico_10@2x.png) 2x);
+  background-image: image-set(url(../img/menu_ico_10.png) 1x, url(../img/menu_ico_10@2x.png) 2x);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.sidebar .global_nav ul li .units:hover::before {
+  background-image: -webkit-image-set(url(../img/menu_ico_10_hover.png) 1x, url(../img/menu_ico_10_hover@2x.png) 2x);
+  background-image: image-set(url(../img/menu_ico_10_hover.png) 1x, url(../img/menu_ico_10_hover@2x.png) 2x);
+}
+.sidebar .global_nav ul li .information:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  background-image: -webkit-image-set(url(../img/menu_ico_11.png) 1x, url(../img/menu_ico_11@2x.png) 2x);
+  background-image: image-set(url(../img/menu_ico_11.png) 1x, url(../img/menu_ico_11@2x.png) 2x);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.sidebar .global_nav ul li .information:hover::before {
+  background-image: -webkit-image-set(url(../img/menu_ico_11_hover.png) 1x, url(../img/menu_ico_11_hover@2x.png) 2x);
+  background-image: image-set(url(../img/menu_ico_11_hover.png) 1x, url(../img/menu_ico_11_hover@2x.png) 2x);
+}
+.sidebar .global_nav ul li .access:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  background-image: -webkit-image-set(url(../img/menu_ico_12.png) 1x, url(../img/menu_ico_12@2x.png) 2x);
+  background-image: image-set(url(../img/menu_ico_12.png) 1x, url(../img/menu_ico_12@2x.png) 2x);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.sidebar .global_nav ul li .access:hover::before {
+  background-image: -webkit-image-set(url(../img/menu_ico_12_hover.png) 1x, url(../img/menu_ico_12_hover@2x.png) 2x);
+  background-image: image-set(url(../img/menu_ico_12_hover.png) 1x, url(../img/menu_ico_12_hover@2x.png) 2x);
+}
+.sidebar .global_nav ul li .nursery:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  background-image: -webkit-image-set(url(../img/menu_ico_13.png) 1x, url(../img/menu_ico_13@2x.png) 2x);
+  background-image: image-set(url(../img/menu_ico_13.png) 1x, url(../img/menu_ico_13@2x.png) 2x);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.sidebar .global_nav ul li .nursery:hover::before {
+  background-image: -webkit-image-set(url(../img/menu_ico_13_hover.png) 1x, url(../img/menu_ico_13_hover@2x.png) 2x);
+  background-image: image-set(url(../img/menu_ico_13_hover.png) 1x, url(../img/menu_ico_13_hover@2x.png) 2x);
+}
+.sidebar .global_nav ul li .sponsors:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  background-image: -webkit-image-set(url(../img/menu_ico_14.png) 1x, url(../img/menu_ico_14@2x.png) 2x);
+  background-image: image-set(url(../img/menu_ico_14.png) 1x, url(../img/menu_ico_14@2x.png) 2x);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.sidebar .global_nav ul li .sponsors:hover::before {
+  background-image: -webkit-image-set(url(../img/menu_ico_14_hover.png) 1x, url(../img/menu_ico_14_hover@2x.png) 2x);
+  background-image: image-set(url(../img/menu_ico_14_hover.png) 1x, url(../img/menu_ico_14_hover@2x.png) 2x);
+}
+.sidebar .global_nav ul li .links:before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  background-image: -webkit-image-set(url(../img/menu_ico_15.png) 1x, url(../img/menu_ico_15@2x.png) 2x);
+  background-image: image-set(url(../img/menu_ico_15.png) 1x, url(../img/menu_ico_15@2x.png) 2x);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.sidebar .global_nav ul li .links:hover::before {
+  background-image: -webkit-image-set(url(../img/menu_ico_15_hover.png) 1x, url(../img/menu_ico_15_hover@2x.png) 2x);
+  background-image: image-set(url(../img/menu_ico_15_hover.png) 1x, url(../img/menu_ico_15_hover@2x.png) 2x);
+}
+.sidebar .jimukyoku {
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  margin: 0 0 25px 0;
+}
+.sidebar .jimukyoku h2 {
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 1.25em;
+  font-size: 18px;
+  width: 280px;
+  height: 90px;
+  margin: 0 auto;
+  background-image: url(../img/jimukyoku_menu.png);
+}
+.sidebar .jimukyoku .h2en {
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 1.25em;
+  font-size: 15px;
+  width: 280px;
+  height: 90px;
+  margin: 0 auto;
+  background-image: url(../img/jimukyoku_menu.png);
+}
+.sidebar .jimukyoku p {
+  padding: 0 20px 20px 20px;
+  font-size: 11px;
+  color: #fff;
+  line-height: 19px;
+}
+.sidebar .jimukyoku p a {
+  color: yellow;
+  text-decoration: underline;
+}
+.sidebar .qrarea {
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  margin: 0 0 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sidebar .qrarea h2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-indent: 0.75em;
+  font-size: 18px;
+  width: 260px;
+  margin: 0 auto;
+  height: 52px;
+  background: url(../img/nav_ttlbar.png);
+  margin: 0 0 20px 0;
+}
+.sidebar .qrarea img {
+  width: 120px;
+}
+.sidebar .bannerarea_bottom {
+  padding: 20px;
+}
+.sidebar .bannerarea_bottom div img {
+  margin-bottom: 20px;
+}
+.sidebar .bannerarea_bottom div img:last-child {
+  margin-bottom: 0;
+}
+
+/*---------------------------- ベースカラー ---------------------------- */
+/*---------------------------- ベースリンクカラー ---------------------- */
+.information h3 {
+  font-weight: 700;
+  letter-spacing: -2px;
+  font-size: 18px;
+  color: #b60005;
+  border-bottom: 3px solid #b60005;
+}
+.information .h3en {
+  letter-spacing: 0.05em;
+}
+.information .info_area {
+  background-color: #fff;
+  height: 130px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 15px;
+}
+.information .info_area ul li {
+  font-size: 14px;
+  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
+  position: relative;
+  text-indent: 1em;
+  vertical-align: middle;
+  border-bottom: 1px solid #eee;
+  padding: 4px 0;
+  margin: 0 0 4px 0;
+}
+.information .info_area ul li:before {
+  text-indent: -0.2em;
+  position: absolute;
+  content: "◆";
+  top: 4px;
+  left: 0;
+  font-size: 12px;
+  color: #b60005;
+  width: 10px;
+  height: 10px;
+}
+
+/*---------------------------- ベースカラー ---------------------------- */
+/*---------------------------- ベースリンクカラー ---------------------- */
 /*---------------------------- リンクホバー ---------------------- */
 a {
   color: #333333;
@@ -439,400 +833,55 @@ body {
   flex-wrap: wrap;
   z-index: 1;
 }
-.contents .inner .sidebar {
-  width: 300px;
-  background: #0a4682;
-}
-.contents .inner .sidebar .bunnerarea {
-  padding: 20px;
-}
-.contents .inner .sidebar .global_nav {
-  padding: 0 10px 10px 10px;
-}
-.contents .inner .sidebar .global_nav ul {
-  border-top: 2px solid #fff;
-  padding: 10px 0 0 0;
-}
-.contents .inner .sidebar .global_nav ul li {
-  margin: 0 0 10px 0;
-  border-top: 2px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-  /*--------------------------------- メニューアイコンクラス----------------------------*/
-  /*--------------------------------- メニューアイコンクラスここまで----------------------------*/
-}
-.contents .inner .sidebar .global_nav ul li a {
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 1.1;
-  width: 280px;
-  height: 50px;
-  color: #fff;
-  padding: 0 0 0 60px;
-  transition: all 0.2s;
-  background-image: url(../img/menu_static.png);
-  position: relative;
-}
-.contents .inner .sidebar .global_nav ul li a:hover {
-  color: #333;
-  transition: all 0.2s;
-  opacity: 1;
-  border-radius: 4px;
-  background-image: url(../img/menu_hover.png);
-}
-.contents .inner .sidebar .global_nav ul li .top {
-  font-weight: normal;
-}
-.contents .inner .sidebar .global_nav ul li .top:before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 15px;
-  width: 30px;
-  height: 30px;
-  background-image: -webkit-image-set(url(../img/menu_ico_01.png) 1x, url(../img/menu_ico_01@2x.png) 2x);
-  background-image: image-set(url(../img/menu_ico_01.png) 1x, url(../img/menu_ico_01@2x.png) 2x);
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.contents .inner .sidebar .global_nav ul li .top:hover::before {
-  background-image: -webkit-image-set(url(../img/menu_ico_01_hover.png) 1x, url(../img/menu_ico_01_hover@2x.png) 2x);
-  background-image: image-set(url(../img/menu_ico_01_hover.png) 1x, url(../img/menu_ico_01_hover@2x.png) 2x);
-}
-.contents .inner .sidebar .global_nav ul li .greeting:before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 15px;
-  width: 30px;
-  height: 30px;
-  background-image: -webkit-image-set(url(../img/menu_ico_02.png) 1x, url(../img/menu_ico_02@2x.png) 2x);
-  background-image: image-set(url(../img/menu_ico_02.png) 1x, url(../img/menu_ico_02@2x.png) 2x);
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.contents .inner .sidebar .global_nav ul li .greeting:hover::before {
-  background-image: -webkit-image-set(url(../img/menu_ico_02_hover.png) 1x, url(../img/menu_ico_02_hover@2x.png) 2x);
-  background-image: image-set(url(../img/menu_ico_02_hover.png) 1x, url(../img/menu_ico_02_hover@2x.png) 2x);
-}
-.contents .inner .sidebar .global_nav ul li .about:before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 15px;
-  width: 30px;
-  height: 30px;
-  background-image: -webkit-image-set(url(../img/menu_ico_03.png) 1x, url(../img/menu_ico_03@2x.png) 2x);
-  background-image: image-set(url(../img/menu_ico_03.png) 1x, url(../img/menu_ico_03@2x.png) 2x);
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.contents .inner .sidebar .global_nav ul li .about:hover::before {
-  background-image: -webkit-image-set(url(../img/menu_ico_03_hover.png) 1x, url(../img/menu_ico_03_hover@2x.png) 2x);
-  background-image: image-set(url(../img/menu_ico_03_hover.png) 1x, url(../img/menu_ico_03_hover@2x.png) 2x);
-}
-.contents .inner .sidebar .global_nav ul li .program:before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 15px;
-  width: 30px;
-  height: 30px;
-  background-image: -webkit-image-set(url(../img/menu_ico_04.png) 1x, url(../img/menu_ico_04@2x.png) 2x);
-  background-image: image-set(url(../img/menu_ico_04.png) 1x, url(../img/menu_ico_04@2x.png) 2x);
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.contents .inner .sidebar .global_nav ul li .program:hover::before {
-  background-image: -webkit-image-set(url(../img/menu_ico_04_hover.png) 1x, url(../img/menu_ico_04_hover@2x.png) 2x);
-  background-image: image-set(url(../img/menu_ico_04_hover.png) 1x, url(../img/menu_ico_04_hover@2x.png) 2x);
-}
-.contents .inner .sidebar .global_nav ul li .abstracts:before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 15px;
-  width: 30px;
-  height: 30px;
-  background-image: -webkit-image-set(url(../img/menu_ico_05.png) 1x, url(../img/menu_ico_05@2x.png) 2x);
-  background-image: image-set(url(../img/menu_ico_05.png) 1x, url(../img/menu_ico_05@2x.png) 2x);
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.contents .inner .sidebar .global_nav ul li .abstracts:hover::before {
-  background-image: -webkit-image-set(url(../img/menu_ico_05_hover.png) 1x, url(../img/menu_ico_05_hover@2x.png) 2x);
-  background-image: image-set(url(../img/menu_ico_05_hover.png) 1x, url(../img/menu_ico_05_hover@2x.png) 2x);
-}
-.contents .inner .sidebar .global_nav ul li .adpted:before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 15px;
-  width: 30px;
-  height: 30px;
-  background-image: -webkit-image-set(url(../img/menu_ico_06.png) 1x, url(../img/menu_ico_06@2x.png) 2x);
-  background-image: image-set(url(../img/menu_ico_06.png) 1x, url(../img/menu_ico_06@2x.png) 2x);
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.contents .inner .sidebar .global_nav ul li .adpted:hover::before {
-  background-image: -webkit-image-set(url(../img/menu_ico_06_hover.png) 1x, url(../img/menu_ico_06_hover@2x.png) 2x);
-  background-image: image-set(url(../img/menu_ico_06_hover.png) 1x, url(../img/menu_ico_06_hover@2x.png) 2x);
-}
-.contents .inner .sidebar .global_nav ul li .forpersonandspeakers:before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 15px;
-  width: 30px;
-  height: 30px;
-  background-image: -webkit-image-set(url(../img/menu_ico_07.png) 1x, url(../img/menu_ico_07@2x.png) 2x);
-  background-image: image-set(url(../img/menu_ico_07.png) 1x, url(../img/menu_ico_07@2x.png) 2x);
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.contents .inner .sidebar .global_nav ul li .forpersonandspeakers:hover::before {
-  background-image: -webkit-image-set(url(../img/menu_ico_07_hover.png) 1x, url(../img/menu_ico_07_hover@2x.png) 2x);
-  background-image: image-set(url(../img/menu_ico_07_hover.png) 1x, url(../img/menu_ico_07_hover@2x.png) 2x);
-}
-.contents .inner .sidebar .global_nav ul li .register:before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 15px;
-  width: 30px;
-  height: 30px;
-  background-image: -webkit-image-set(url(../img/menu_ico_08.png) 1x, url(../img/menu_ico_08@2x.png) 2x);
-  background-image: image-set(url(../img/menu_ico_08.png) 1x, url(../img/menu_ico_08@2x.png) 2x);
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.contents .inner .sidebar .global_nav ul li .register:hover::before {
-  background-image: -webkit-image-set(url(../img/menu_ico_08_hover.png) 1x, url(../img/menu_ico_08_hover@2x.png) 2x);
-  background-image: image-set(url(../img/menu_ico_08_hover.png) 1x, url(../img/menu_ico_08_hover@2x.png) 2x);
-}
-.contents .inner .sidebar .global_nav ul li .forparticipant:before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 15px;
-  width: 30px;
-  height: 30px;
-  background-image: -webkit-image-set(url(../img/menu_ico_09.png) 1x, url(../img/menu_ico_09@2x.png) 2x);
-  background-image: image-set(url(../img/menu_ico_09.png) 1x, url(../img/menu_ico_09@2x.png) 2x);
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.contents .inner .sidebar .global_nav ul li .forparticipant:hover::before {
-  background-image: -webkit-image-set(url(../img/menu_ico_09_hover.png) 1x, url(../img/menu_ico_09_hover@2x.png) 2x);
-  background-image: image-set(url(../img/menu_ico_09_hover.png) 1x, url(../img/menu_ico_09_hover@2x.png) 2x);
-}
-.contents .inner .sidebar .global_nav ul li .units:before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 15px;
-  width: 30px;
-  height: 30px;
-  background-image: -webkit-image-set(url(../img/menu_ico_10.png) 1x, url(../img/menu_ico_10@2x.png) 2x);
-  background-image: image-set(url(../img/menu_ico_10.png) 1x, url(../img/menu_ico_10@2x.png) 2x);
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.contents .inner .sidebar .global_nav ul li .units:hover::before {
-  background-image: -webkit-image-set(url(../img/menu_ico_10_hover.png) 1x, url(../img/menu_ico_10_hover@2x.png) 2x);
-  background-image: image-set(url(../img/menu_ico_10_hover.png) 1x, url(../img/menu_ico_10_hover@2x.png) 2x);
-}
-.contents .inner .sidebar .global_nav ul li .information:before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 15px;
-  width: 30px;
-  height: 30px;
-  background-image: -webkit-image-set(url(../img/menu_ico_11.png) 1x, url(../img/menu_ico_11@2x.png) 2x);
-  background-image: image-set(url(../img/menu_ico_11.png) 1x, url(../img/menu_ico_11@2x.png) 2x);
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.contents .inner .sidebar .global_nav ul li .information:hover::before {
-  background-image: -webkit-image-set(url(../img/menu_ico_11_hover.png) 1x, url(../img/menu_ico_11_hover@2x.png) 2x);
-  background-image: image-set(url(../img/menu_ico_11_hover.png) 1x, url(../img/menu_ico_11_hover@2x.png) 2x);
-}
-.contents .inner .sidebar .global_nav ul li .access:before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 15px;
-  width: 30px;
-  height: 30px;
-  background-image: -webkit-image-set(url(../img/menu_ico_12.png) 1x, url(../img/menu_ico_12@2x.png) 2x);
-  background-image: image-set(url(../img/menu_ico_12.png) 1x, url(../img/menu_ico_12@2x.png) 2x);
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.contents .inner .sidebar .global_nav ul li .access:hover::before {
-  background-image: -webkit-image-set(url(../img/menu_ico_12_hover.png) 1x, url(../img/menu_ico_12_hover@2x.png) 2x);
-  background-image: image-set(url(../img/menu_ico_12_hover.png) 1x, url(../img/menu_ico_12_hover@2x.png) 2x);
-}
-.contents .inner .sidebar .global_nav ul li .nursery:before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 15px;
-  width: 30px;
-  height: 30px;
-  background-image: -webkit-image-set(url(../img/menu_ico_13.png) 1x, url(../img/menu_ico_13@2x.png) 2x);
-  background-image: image-set(url(../img/menu_ico_13.png) 1x, url(../img/menu_ico_13@2x.png) 2x);
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.contents .inner .sidebar .global_nav ul li .nursery:hover::before {
-  background-image: -webkit-image-set(url(../img/menu_ico_13_hover.png) 1x, url(../img/menu_ico_13_hover@2x.png) 2x);
-  background-image: image-set(url(../img/menu_ico_13_hover.png) 1x, url(../img/menu_ico_13_hover@2x.png) 2x);
-}
-.contents .inner .sidebar .global_nav ul li .sponsors:before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 15px;
-  width: 30px;
-  height: 30px;
-  background-image: -webkit-image-set(url(../img/menu_ico_14.png) 1x, url(../img/menu_ico_14@2x.png) 2x);
-  background-image: image-set(url(../img/menu_ico_14.png) 1x, url(../img/menu_ico_14@2x.png) 2x);
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.contents .inner .sidebar .global_nav ul li .sponsors:hover::before {
-  background-image: -webkit-image-set(url(../img/menu_ico_14_hover.png) 1x, url(../img/menu_ico_14_hover@2x.png) 2x);
-  background-image: image-set(url(../img/menu_ico_14_hover.png) 1x, url(../img/menu_ico_14_hover@2x.png) 2x);
-}
-.contents .inner .sidebar .global_nav ul li .links:before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 15px;
-  width: 30px;
-  height: 30px;
-  background-image: -webkit-image-set(url(../img/menu_ico_15.png) 1x, url(../img/menu_ico_15@2x.png) 2x);
-  background-image: image-set(url(../img/menu_ico_15.png) 1x, url(../img/menu_ico_15@2x.png) 2x);
-  background-position: center center;
-  background-repeat: no-repeat;
-}
-.contents .inner .sidebar .global_nav ul li .links:hover::before {
-  background-image: -webkit-image-set(url(../img/menu_ico_15_hover.png) 1x, url(../img/menu_ico_15_hover@2x.png) 2x);
-  background-image: image-set(url(../img/menu_ico_15_hover.png) 1x, url(../img/menu_ico_15_hover@2x.png) 2x);
-}
-.contents .inner .sidebar .jimukyoku {
-  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
-  margin: 0 0 25px 0;
-}
-.contents .inner .sidebar .jimukyoku h2 {
-  display: flex;
-  align-items: center;
-  padding: 0 0 0 1.25em;
-  font-size: 18px;
-  width: 280px;
-  height: 90px;
-  margin: 0 auto;
-  background-image: url(../img/jimukyoku_menu.png);
-}
-.contents .inner .sidebar .jimukyoku .h2en {
-  display: flex;
-  align-items: center;
-  padding: 0 0 0 1.25em;
-  font-size: 18px;
-  width: 280px;
-  height: 90px;
-  margin: 0 auto;
-  background-image: url(../img/jimukyoku_menu.png);
-}
-.contents .inner .sidebar .jimukyoku p {
-  padding: 0 20px 20px 20px;
-  font-size: 11px;
-  color: #fff;
-  line-height: 19px;
-}
-.contents .inner .sidebar .jimukyoku p a {
-  color: yellow;
-  text-decoration: underline;
-}
-.contents .inner .sidebar .qrarea {
-  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
-  margin: 0 0 30px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.contents .inner .sidebar .qrarea h2 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-indent: 0.75em;
-  font-size: 18px;
-  width: 260px;
-  margin: 0 auto;
-  height: 52px;
-  background: url(../img/nav_ttlbar.png);
-  margin: 0 0 20px 0;
-}
-.contents .inner .sidebar .qrarea img {
-  width: 120px;
-}
-.contents .inner .sidebar .bannerarea_bottom {
-  padding: 20px;
-}
-.contents .inner .sidebar .bannerarea_bottom div img {
-  margin-bottom: 20px;
-}
-.contents .inner .sidebar .bannerarea_bottom div img:last-child {
-  margin-bottom: 0;
-}
 .contents .inner .main {
   width: 700px;
   background-color: #fff;
   background-image: url(../img/main_bg.jpg);
   padding: 20px;
+  font-family: "Arial", "メイリオ";
 }
-.contents .inner .main img {
+.contents .inner .main .main_img {
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   margin: 0 0 20px 0;
 }
-.contents .inner .main .information h3 {
+.contents .inner .main .main_article {
+  background: #fff;
+  height: auto;
+  padding: 60px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.contents .inner .main .main_article h2 {
+  font-family: "Source Serif Pro", "Hiragino Sans W3", serif;
   font-weight: 700;
-  letter-spacing: -2px;
-  font-size: 18px;
-  color: #b60005;
-  border-bottom: 3px solid #b60005;
+  border-bottom: 2px solid #0a4682;
+  -o-border-image: linear-gradient(to right, #0a4682 0%, #8fccf5 100%);
+     border-image: linear-gradient(to right, #0a4682 0%, #8fccf5 100%);
+  border-image-slice: 1;
+  font-size: 26px;
+  margin: 0 0 50px 0;
 }
-.contents .inner .main .information .info_area {
-  background-color: #fff;
-  height: 130px;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  padding: 15px;
+.contents .inner .main .main_article .profile {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: end;
+  margin: 0 0 50px 0;
 }
-.contents .inner .main .information .info_area ul li {
-  font-size: 14px;
-  font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
-  position: relative;
-  text-indent: 1em;
-  vertical-align: middle;
-  border-bottom: 1px solid #eee;
-  padding: 4px 0;
-  margin: 0 0 4px 0;
+.contents .inner .main .main_article .profile_txt {
+  text-align: right;
+  margin: 0 30px 0 0;
+  padding: 0 0 20px 0;
 }
-.contents .inner .main .information .info_area ul li:before {
-  text-indent: -0.2em;
-  position: absolute;
-  content: "◆";
-  top: 4px;
-  left: 0;
-  font-size: 12px;
-  color: #b60005;
-  width: 10px;
-  height: 10px;
+.contents .inner .main .main_article .profile_txt .name {
+  font-size: 22px;
+}
+.contents .inner .main .main_article .profile_txt .tx_small {
+  font-size: 13px;
+}
+.contents .inner .main .main_article .greeting p {
+  text-align: justify;
+  margin: 0 0 5px 0;
 }
 
 .contents_bottom_wrap {
