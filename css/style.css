@@ -885,6 +885,7 @@ body {
 }
 .contents .inner .main .main_article .greeting p {
   text-align: justify;
+  text-indent: 1em;
 }
 
 .contents_bottom_wrap {
