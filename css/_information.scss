@@ -30,7 +30,7 @@ $secondary_color: #b60005;
 
         ul {
             li {
-                font-size: 14px;
+                font-size: 15px;
                 font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "verdana", sans-serif;
                 position: relative;
                 text-indent: 1em;
@@ -38,6 +38,15 @@ $secondary_color: #b60005;
                 border-bottom: 1px solid #eee;
                 padding: 4px 0;
                 margin: 0 0 4px 0;
+
+                span {
+                    font-weight: bold;
+                }
+
+                a {
+                    color: #0a4682;
+                    text-decoration: underline;
+                }
 
                 &:before {
                     text-indent: -0.2em;
@@ -49,6 +58,7 @@ $secondary_color: #b60005;
                     color: $secondary_color;
                     width: 10px;
                     height: 10px;
+
                 }
             }
         }
